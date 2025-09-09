@@ -1,0 +1,38 @@
+.blocks h1 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.blocks li {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block li {
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+.sub-text {
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+.icons {
+    display: flex;
+    grid-gap: 7px;
+    margin-top: 10px;
+}
+
+.icon {
+    height: 45px;
+    width: 45px;
+    object-fit: contain;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svyatoslav Andreev</title>
+    <link rel="stylesheet" href="./global/global.styles.css" />
+    <link rel="stylesheet" href="./global/global.fonts.css" />
+    <link rel="stylesheet" href="./global/global.colors.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/contact.css" />
+    <link rel="icon" href="./src/images/logo.png" type="image/x-icon">
+</head>
+<body style="background: black;">
+    <div class="margins">
+        <div class="main-wrapper" style="background-image: url(./src/images/background/5.png); padding-top: 10px; padding-bottom: 0px;">
+            <div class="sub-paddings">
+                <div class="profile">
+                    <img draggable="false" class="profile-image" src="./src/images/profile/astynate.jpg" />
+                    <h1 style="color: #ffffff; font-weight: 400; font-size: 48px; font-family: 'Sacramento', cursive;">Svyatoslav Andreev</h1>
+                    <h3 style="color: rgba(201, 201, 201, 0.361); font-weight: 400; font-size: 16px;">Software Engineer & Artist</h3>
+                </div>
+                <div class="header">
+                    <div class="header-button"><a href="./index.html">News</a></div>
+                    <div class="header-button"><a href="./products.html">Products</a></div>
+                    <div class="header-button"><a href="./portfolio.html">Portfolio</a></div>
+                    <div class="header-button"><a href="./for-employers.html">For Employers</a></div>
+                    <div class="header-button"><a href="./gallery.html">Gallery</a></div>
+                    <div class="header-button" id="active"><a href="./contact.html">Contact</a></div>
+                </div>
+            </div>
+            <form 
+                action="https://formspree.io/f/movnrvkr"
+                method="POST"
+                class="sub-paddings form"
+                style="display: flex; flex-direction: column; padding-bottom: 20px; gap: 10px; border-bottom: 1px solid rgba(255, 255, 255, 0.3);"
+            >
+                <div class="space-between" style="border-top: 1px solid rgba(255, 255, 255, 0.3); margin-top: 20px; padding-top: 10px;">
+                    <h1 style="color: white; font-size: 18px; font-weight: 500;">Contact me</h1>
+                    <p style="color: rgba(255, 255, 255, 0.5);">sicome.a.s@gmail.com</p>
+                </div>
+                <div style="display: flex; grid-gap: 10px; width: 100%;">
+                    <div class="input-wrapper">
+                        <span>Name</span>
+                        <input required type="text" type="Name" placeholder="John Wick">
+                    </div>
+                    <div class="input-wrapper">
+                        <span>Email</span>
+                        <input required type="email" name="Email" placeholder="john_wich@gmail.com">
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <span>Topic</span>
+                    <input required type="text" name="Topic" placeholder="Job offer">
+                </div>
+                <div class="input-wrapper">
+                    <textarea required placeholder="Message" name="Message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="space-between">
+                    <p>Please read Instend’s Unsolicited Idea Submission Policy before you send us your feedback.</p>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+
+            <footer style="margin-top: 70px; margin-bottom: 40px;">
+                <span style="color: #ffffff2d; font-size: 18px; font-family: 'Over the Rainbow';">© Sviatasłaŭ Andrejeŭ, 2025</span>
+            </footer>
+        </div>
+    </div>
+    <script src="./src/js/player.js"></script>
+    <script src="./src/js/menu.js"></script>
+</body>
+</html>

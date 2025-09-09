@@ -1,0 +1,49 @@
+.block {
+    height: auto;
+    width: 100%;
+    background: hsla(0, 0%, 100%, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    backdrop-filter: blur(20px);
+}
+
+.company-logo {
+    height: 40px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.text {
+    font-size: 18px;
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.button {
+    padding: 9px 30px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    background: hsla(0, 0%, 100%, 0.15);
+    border: 1px solid hsla(0, 0%, 100%, 0.2);
+    transition: 0.15s ease;
+    margin-top: 60px;
+}
+
+.button:hover {
+    background: hsla(0, 0%, 100%, 0.3);
+}
+
+.button:active {
+    background: hsla(0, 0%, 100%, 0.2);
+}
+
+.device-mockup {
+    margin: auto;
+    width: 90%;
+}

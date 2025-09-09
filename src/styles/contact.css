@@ -1,0 +1,48 @@
+.input-wrapper {
+    width: 100%;
+    padding: 0px 15px;
+    background: rgba(255, 255, 255, 0.15);
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    grid-gap: 20px;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.input-wrapper input {
+    padding: 15px 0px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.input-wrapper textarea {
+    height: 200px;
+    width: 100%;
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 15px 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form {
+    color: white;
+    margin-top: 20px;
+}
+
+.form button {
+    padding: 10px 35px;
+    background: #0F7BFF;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
