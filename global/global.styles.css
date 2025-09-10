@@ -259,6 +259,10 @@ footer {
 }
 
 @media (max-width: 700px) {
+    body {
+        --main-content-width: 100vw;
+    }
+
     .two-columns {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -296,10 +300,6 @@ footer {
 }
 
 @media (max-width: 600px) { 
-    body {
-        --main-content-width: 90vw;
-    }
-
     .videos {
         grid-template-columns: repeat(1, 1fr);
     }

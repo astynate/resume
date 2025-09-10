@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="./global/global.fonts.css" />
     <link rel="stylesheet" href="./global/global.colors.css" />
     <link rel="stylesheet" href="./src/styles/header.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
     <link rel="stylesheet" href="./src/styles/products.css" />
     <link rel="icon" href="./src/images/logo.png" type="image/x-icon">
 </head>
 <body style="background: black;">
     <div class="margins" style="background: linear-gradient(to bottom, #000B17 0%, #140000 36%, #00091E 70%, #000000 100%);">
         <div class="main-wrapper" style="padding-top: 10px; padding-bottom: 0px;">
+            <!-- ============================================================================= -->
+
             <div class="profile">
                 <img draggable="false" class="profile-image" src="./src/images/profile/astynate.jpg" />
                 <h1 style="color: #ffffff; font-weight: 400; font-size: 48px; font-family: 'Sacramento', cursive;">Svyatoslav Andreev</h1>
                 <h3 style="color: rgba(201, 201, 201, 0.361); font-weight: 400; font-size: 16px;">Software Engineer & Artist</h3>
             </div>
+
+            <!-- ============================================================================= -->
+
             <div class="header">
                 <div class="header-button"><a href="./index.html">News</a></div>
                 <div class="header-button" id="active"><a href="./products.html">Products</a></div>
@@ -28,6 +32,31 @@
                 <div class="header-button"><a href="./gallery.html">Gallery</a></div>
                 <div class="header-button"><a href="./contact.html">Contact</a></div>
             </div>
+
+            <!-- ============================================================================= -->
+
+            <div class="menu-button" state="closed" onclick="changeMenuState()">
+                <div class="menu-button-line"></div>
+                <div class="menu-button-line"></div>
+                <div class="menu-button-line"></div>
+            </div>
+
+            <!-- ============================================================================= -->
+
+            <div class="menu">
+                <br>
+                <br>
+                <br>
+                <a href="index.html"><h1>News</h1></a>
+                <a href="products.html"><h1>Products</h1></a>
+                <a href="portfolio.html"><h1>Portfolio</h1></a>
+                <a href="for-employers.html"><h1>For Employers</h1></a>
+                <a href="gallery.html"><h1>Gallery</h1></a>
+                <a href="contact.html"><h1>Contact</h1></a>
+            </div>
+
+            <!-- ============================================================================= -->
+
             <div class="sub-paddings" style="margin-top: 20px; display: flex; flex-direction: column; grid-gap: 10px;">
                 <div class="block" style="display: grid; grid-template-columns: repeat(2, 1fr);">
                     <div class="left">
@@ -41,20 +70,20 @@
                     </div>
                 </div>
 
-                <div style="display: flex; grid-gap: 10px;">
+                <div class="wrapper" style="display: flex; grid-gap: 10px; ">
                     <div class="block">
                         <img src="./src/images/icons/itransition-logo-white.png" draggable="false" class="company-logo"/>
                         <h1 class="title">Itransition Group</h1>
                         <p class="text">I had software engineer internship lasting 2 month in September 2025.</p>
                         <a href="https://www.itransition.com/" target="_blank"><button class="button">Visit website</button></a>
                     </div>
-                    <div class="block" style="display: flex; grid-gap: 15px;">
+                    <div class="block" style="display: flex; grid-gap: 15px; flex-direction: row;">
                         <img src="./src/images/itransition/office.png" style="height: auto; max-height: 200px; width: 100%; opacity: 0.8; object-fit: cover;" draggable="false" />
                         <img src="./src/images/itransition/certificate.png" style="height: auto; max-height: 200px; width: 100%; opacity: 0.8; object-fit: cover;" draggable="false" />
                     </div>
                 </div>
 
-                <div class="block" style="display: grid; grid-template-columns: repeat(2, 1fr);">
+                <div class="block reverse" style="display: grid; grid-template-columns: repeat(2, 1fr);">
                     <div class="left">
                         <h1 class="title">Itransition Forms</h1>
                         <p class="text">Due my internship I've created the web application for creating, editing and filling out forms. With authentification according to the RFC 7519 standart, beautiful & responsive user interface and high-efficient database.</p>
@@ -82,7 +111,10 @@
                     </div>
                 </div>
             </div>
-            <footer style="margin-top: 70px; margin-bottom: 40px;">
+
+            <!-- ============================================================================= -->
+
+            <footer style="margin-top: 40px; margin-bottom: 40px;">
                 <span style="color: #ffffff2d; font-size: 18px; font-family: 'Over the Rainbow';">© Sviatasłaŭ Andrejeŭ, 2025</span>
             </footer>
         </div>
