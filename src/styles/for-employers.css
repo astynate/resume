@@ -6,6 +6,7 @@
 .blocks li {
     font-size: 16px;
     font-weight: 400;
+    margin-left: 16px;
 }
 
 .block {
@@ -13,11 +14,6 @@
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-}
-
-.block li {
-    margin-left: 15px;
-    font-weight: 400;
 }
 
 .sub-text {
@@ -35,4 +31,47 @@
     height: 45px;
     width: 45px;
     object-fit: contain;
+    transition: 0.15s ease;
+}
+
+.icon:hover {
+    transform: scale(105%);
+}
+
+.icon:active {
+    transform: scale(95%);
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+@media (max-width: 1100px) {
+    .two-columns {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blocks {
+        font-size: 16px;
+    }
+
+    .blocks h1 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .blocks li {
+        font-size: 16px;
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .two-columns {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

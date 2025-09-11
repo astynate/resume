@@ -56,7 +56,7 @@
     .block {
         grid-template-columns: repeat(1, 1fr) !important;
         grid-template-rows: repeat(2, 1fr);
-        padding: 30px 30px;
+        padding: 30px 20px;
         grid-gap: 10px;
         display: flex !important;
         text-align: center;
@@ -79,11 +79,15 @@
 
     .company-logo {
         height: auto;
-        width: 65px;
+        width: 55px;
     }
 
     .title {
-        font-size: 42px;
+        font-size: 36px;
+    }
+
+    .text {
+        font-size: 16px;
     }
 
     .wrapper {

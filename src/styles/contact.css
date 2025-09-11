@@ -9,6 +9,13 @@
     grid-gap: 20px;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.15s ease;
+}
+
+.input-wrapper:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .input-wrapper input {
@@ -37,16 +44,39 @@
     margin-top: 20px;
 }
 
-.form  {
-
-}
-
 .form button {
-    padding: 10px 35px;
+    padding: 8px 30px;
     background: #0F7BFF;
     border: none;
     outline: none;
     border-radius: 30px;
     color: white;
     cursor: pointer;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form button:hover {
+    background: #2185fe;
+}
+
+.form button:active {
+    background: #0d6bdf;
+}
+
+.form-grid {
+    display: flex; 
+    grid-gap: 10px;
+}
+
+@media (max-width: 1000px) {
+    .form-grid {
+        flex-direction: column;
+    }
+
+    .form {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

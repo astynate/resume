@@ -1,7 +1,7 @@
 .blocks {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    margin-top: 30px;
+    margin-top: 20px;
     grid-gap: 10px;
     backdrop-filter: blur(3px);
 }
@@ -14,6 +14,34 @@
     background: rgb(19, 28, 39);
 }
 
+.post-block iframe {
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
 .post-block:hover {
     opacity: 1;
+}
+
+.post-block i {
+    display: none;
+}
+
+.tgme_widget_message_bubble, .tgme_widget_message_inline_keyboard {
+    margin-left: 0px !important;
+}
+
+.tgme_widget_message_bubble_tail {
+    display: none !important;
+}
+
+.tgme_widget_message_bubble_tail {
+    display: none !important;
+}
+
+@media (max-width: 374px) {
+    .post-block {
+        width: 100%;
+        overflow: hidden;
+    }
 }
