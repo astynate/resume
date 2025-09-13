@@ -13,6 +13,9 @@
 </head>
 <body style="background: black;">
     <div class="margins" style="background: #151F29;">
+        <video autoplay muted loop id="bg-video">
+            <source src="./src/videos/background/Background.mp4" type="video/mp4">
+        </video>
         <div class="main-wrapper" style="padding-top: 10px; padding-bottom: 0px;">
             <div class="profile">
                 <img draggable="false" class="profile-image" src="./src/images/profile/astynate.jpg" />
@@ -84,15 +87,5 @@
         </div>
     </div>
     <script src="./src/js/menu.js"></script>
-    <script>
-        const iframes = document.querySelectorAll('iframe');
-
-        iframes.forEach((iframe) => {
-            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-
-            console.log(iframeDoc);
-            // iframeDoc.querySelectorAll('i').forEach(el => el.remove());
-        });
-    </script>
 </body>
 </html>
